@@ -1,0 +1,14 @@
+C:\Users\Admin\Desktop\MiniTestConsoleGitHubApp\MiniTestConsoleGitHub\bin\Debug\net8.0\MiniTestConsoleGitHub.exe
+C:\Users\Admin\Desktop\MiniTestConsoleGitHubApp\MiniTestConsoleGitHub\bin\Debug\net8.0\MiniTestConsoleGitHub.deps.json
+C:\Users\Admin\Desktop\MiniTestConsoleGitHubApp\MiniTestConsoleGitHub\bin\Debug\net8.0\MiniTestConsoleGitHub.runtimeconfig.json
+C:\Users\Admin\Desktop\MiniTestConsoleGitHubApp\MiniTestConsoleGitHub\bin\Debug\net8.0\MiniTestConsoleGitHub.dll
+C:\Users\Admin\Desktop\MiniTestConsoleGitHubApp\MiniTestConsoleGitHub\bin\Debug\net8.0\MiniTestConsoleGitHub.pdb
+C:\Users\Admin\Desktop\MiniTestConsoleGitHubApp\MiniTestConsoleGitHub\obj\Debug\net8.0\MiniTestConsoleGitHub.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\Desktop\MiniTestConsoleGitHubApp\MiniTestConsoleGitHub\obj\Debug\net8.0\MiniTestConsoleGitHub.AssemblyInfoInputs.cache
+C:\Users\Admin\Desktop\MiniTestConsoleGitHubApp\MiniTestConsoleGitHub\obj\Debug\net8.0\MiniTestConsoleGitHub.AssemblyInfo.cs
+C:\Users\Admin\Desktop\MiniTestConsoleGitHubApp\MiniTestConsoleGitHub\obj\Debug\net8.0\MiniTestConsoleGitHub.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\MiniTestConsoleGitHubApp\MiniTestConsoleGitHub\obj\Debug\net8.0\MiniTestConsoleGitHub.dll
+C:\Users\Admin\Desktop\MiniTestConsoleGitHubApp\MiniTestConsoleGitHub\obj\Debug\net8.0\refint\MiniTestConsoleGitHub.dll
+C:\Users\Admin\Desktop\MiniTestConsoleGitHubApp\MiniTestConsoleGitHub\obj\Debug\net8.0\MiniTestConsoleGitHub.pdb
+C:\Users\Admin\Desktop\MiniTestConsoleGitHubApp\MiniTestConsoleGitHub\obj\Debug\net8.0\MiniTestConsoleGitHub.genruntimeconfig.cache
+C:\Users\Admin\Desktop\MiniTestConsoleGitHubApp\MiniTestConsoleGitHub\obj\Debug\net8.0\ref\MiniTestConsoleGitHub.dll

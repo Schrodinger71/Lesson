@@ -1,5 +1,5 @@
 ﻿using System;
-namespace ConsoleApp1
+namespace MiniTestConsoleGitHub
 {
     class Program
     {
