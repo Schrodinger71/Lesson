@@ -1,0 +1,62 @@
+# This is a basic workflow to help you get started with Actions
+
+name: Windows Build and Sign
+
+# Controls when the action will run. 
+on:
+  # Triggers the workflow on push or pull request events but only for the main branch
+  push:
+    branches: [ main ]
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build"
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Set up .NET Core
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: '8.0.x'
+        
+    - name: dotnet publish
+      run: dotnet publish app_WindowsForm/WindowsFormsAppFieldIntersectionPoint/WindowsFormsApp1.csproj  -c Release -r win-x64 -p:PublishSingleFile=true --self-contained true -p:PublishReadyToRunShowWarnings=true -o ${{env.DOTNET_ROOT}}/consoleapp
+
+
+    - name: Upload artifact for deployment job
+      uses: actions\upload-artifact@v2
+      with:
+        name: consoleapp
+        path: ${{env.DOTNET_ROOT}}
+  package:
+    runs-on: windows-latest
+    needs: build
+
+    steps:
+
+    - name: Download artifact from build job
+      uses: actions/download-artifact@v2
+      with:
+        name: ConsoleApp1/ConsoleApp1.csproj
+        
+    #- name: Sign exe 
+    #  uses: markeytos/code-sign-action@v1.01
+    #  with:
+    #    certificate: '${{ secrets.SIGNINGCERTIFICATE }}'
+    #    password: '${{ secrets.CERTPASSWORD }}'
+    #    certificatesha1: '${{ secrets.CERTHASH }}'
+    #    folder: 'consoleapp'
+    #    timestampUrl: 'http://timestamp.digicert.com'
+    #    recursive: true 
+
+        
+    - name: Upload artifact for deployment job
+      uses: actions\upload-artifact@v2
+      with:
+        name: singedConsoleApp
+        path: .\consoleapp
