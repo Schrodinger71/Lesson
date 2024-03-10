@@ -33,7 +33,6 @@ Hi, I'm Mona. You might recognize me as GitHub's mascot.
 <summary>My top THINGS-TO-RANK</summary>
 
 YOUR TABLE
-<details open>
 
 
 </details>
