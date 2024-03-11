@@ -1,0 +1,20 @@
+C:\Users\Admin\Desktop\С++\2kurs\Basalova\7 Блабра_16\WindowsFormsAppLab7_2\bin\Debug\WindowsFormsAppLab7_2.exe.config
+C:\Users\Admin\Desktop\С++\2kurs\Basalova\7 Блабра_16\WindowsFormsAppLab7_2\bin\Debug\WindowsFormsAppLab7_2.exe
+C:\Users\Admin\Desktop\С++\2kurs\Basalova\7 Блабра_16\WindowsFormsAppLab7_2\bin\Debug\WindowsFormsAppLab7_2.pdb
+C:\Users\Admin\Desktop\С++\2kurs\Basalova\7 Блабра_16\WindowsFormsAppLab7_2\obj\Debug\WindowsFormsAppLab7_2.csproj.AssemblyReference.cache
+C:\Users\Admin\Desktop\С++\2kurs\Basalova\7 Блабра_16\WindowsFormsAppLab7_2\obj\Debug\WindowsFormsAppLab7_2.Form1.resources
+C:\Users\Admin\Desktop\С++\2kurs\Basalova\7 Блабра_16\WindowsFormsAppLab7_2\obj\Debug\WindowsFormsAppLab7_2.Properties.Resources.resources
+C:\Users\Admin\Desktop\С++\2kurs\Basalova\7 Блабра_16\WindowsFormsAppLab7_2\obj\Debug\WindowsFormsAppLab7_2.csproj.GenerateResource.cache
+C:\Users\Admin\Desktop\С++\2kurs\Basalova\7 Блабра_16\WindowsFormsAppLab7_2\obj\Debug\WindowsFormsAppLab7_2.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\С++\2kurs\Basalova\7 Блабра_16\WindowsFormsAppLab7_2\obj\Debug\WindowsFormsAppLab7_2.exe
+C:\Users\Admin\Desktop\С++\2kurs\Basalova\7 Блабра_16\WindowsFormsAppLab7_2\obj\Debug\WindowsFormsAppLab7_2.pdb
+C:\Lesson\app_WindowsForm\WindowsFormsAppLab7_2\bin\Debug\WindowsFormsAppLab7_2.exe.config
+C:\Lesson\app_WindowsForm\WindowsFormsAppLab7_2\bin\Debug\WindowsFormsAppLab7_2.exe
+C:\Lesson\app_WindowsForm\WindowsFormsAppLab7_2\bin\Debug\WindowsFormsAppLab7_2.pdb
+C:\Lesson\app_WindowsForm\WindowsFormsAppLab7_2\obj\Debug\WindowsFormsAppLab7_2.csproj.AssemblyReference.cache
+C:\Lesson\app_WindowsForm\WindowsFormsAppLab7_2\obj\Debug\WindowsFormsAppLab7_2.Form1.resources
+C:\Lesson\app_WindowsForm\WindowsFormsAppLab7_2\obj\Debug\WindowsFormsAppLab7_2.Properties.Resources.resources
+C:\Lesson\app_WindowsForm\WindowsFormsAppLab7_2\obj\Debug\WindowsFormsAppLab7_2.csproj.GenerateResource.cache
+C:\Lesson\app_WindowsForm\WindowsFormsAppLab7_2\obj\Debug\WindowsFormsAppLab7_2.csproj.CoreCompileInputs.cache
+C:\Lesson\app_WindowsForm\WindowsFormsAppLab7_2\obj\Debug\WindowsFormsAppLab7_2.exe
+C:\Lesson\app_WindowsForm\WindowsFormsAppLab7_2\obj\Debug\WindowsFormsAppLab7_2.pdb

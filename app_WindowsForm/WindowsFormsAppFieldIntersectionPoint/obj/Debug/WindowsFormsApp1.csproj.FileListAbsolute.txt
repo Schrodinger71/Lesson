@@ -8,3 +8,13 @@ C:\Users\Admin\Desktop\С++\2kurs\Basalova\7 Блабра_16\WindowsFormsApp1\ob
 C:\Users\Admin\Desktop\С++\2kurs\Basalova\7 Блабра_16\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
 C:\Users\Admin\Desktop\С++\2kurs\Basalova\7 Блабра_16\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
 C:\Users\Admin\Desktop\С++\2kurs\Basalova\7 Блабра_16\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+C:\Lesson\app_WindowsForm\WindowsFormsAppFieldIntersectionPoint\bin\Debug\WindowsFormsApp1.exe.config
+C:\Lesson\app_WindowsForm\WindowsFormsAppFieldIntersectionPoint\bin\Debug\WindowsFormsApp1.exe
+C:\Lesson\app_WindowsForm\WindowsFormsAppFieldIntersectionPoint\bin\Debug\WindowsFormsApp1.pdb
+C:\Lesson\app_WindowsForm\WindowsFormsAppFieldIntersectionPoint\obj\Debug\WindowsFormsApp1.csproj.AssemblyReference.cache
+C:\Lesson\app_WindowsForm\WindowsFormsAppFieldIntersectionPoint\obj\Debug\WindowsFormsApp1.Form1.resources
+C:\Lesson\app_WindowsForm\WindowsFormsAppFieldIntersectionPoint\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+C:\Lesson\app_WindowsForm\WindowsFormsAppFieldIntersectionPoint\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
+C:\Lesson\app_WindowsForm\WindowsFormsAppFieldIntersectionPoint\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
+C:\Lesson\app_WindowsForm\WindowsFormsAppFieldIntersectionPoint\obj\Debug\WindowsFormsApp1.exe
+C:\Lesson\app_WindowsForm\WindowsFormsAppFieldIntersectionPoint\obj\Debug\WindowsFormsApp1.pdb
