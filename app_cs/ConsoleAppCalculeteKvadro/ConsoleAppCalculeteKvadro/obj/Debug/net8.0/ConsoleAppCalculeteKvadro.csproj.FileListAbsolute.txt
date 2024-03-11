@@ -1,0 +1,15 @@
+C:\Lesson\app_cs\ConsoleAppCalculeteKvadro\ConsoleAppCalculeteKvadro\bin\Debug\net8.0\ConsoleAppCalculeteKvadro.exe
+C:\Lesson\app_cs\ConsoleAppCalculeteKvadro\ConsoleAppCalculeteKvadro\bin\Debug\net8.0\ConsoleAppCalculeteKvadro.deps.json
+C:\Lesson\app_cs\ConsoleAppCalculeteKvadro\ConsoleAppCalculeteKvadro\bin\Debug\net8.0\ConsoleAppCalculeteKvadro.runtimeconfig.json
+C:\Lesson\app_cs\ConsoleAppCalculeteKvadro\ConsoleAppCalculeteKvadro\bin\Debug\net8.0\ConsoleAppCalculeteKvadro.dll
+C:\Lesson\app_cs\ConsoleAppCalculeteKvadro\ConsoleAppCalculeteKvadro\bin\Debug\net8.0\ConsoleAppCalculeteKvadro.pdb
+C:\Lesson\app_cs\ConsoleAppCalculeteKvadro\ConsoleAppCalculeteKvadro\obj\Debug\net8.0\ConsoleAppCalculeteKvadro.GeneratedMSBuildEditorConfig.editorconfig
+C:\Lesson\app_cs\ConsoleAppCalculeteKvadro\ConsoleAppCalculeteKvadro\obj\Debug\net8.0\ConsoleAppCalculeteKvadro.AssemblyInfoInputs.cache
+C:\Lesson\app_cs\ConsoleAppCalculeteKvadro\ConsoleAppCalculeteKvadro\obj\Debug\net8.0\ConsoleAppCalculeteKvadro.AssemblyInfo.cs
+C:\Lesson\app_cs\ConsoleAppCalculeteKvadro\ConsoleAppCalculeteKvadro\obj\Debug\net8.0\ConsoleAppCalculeteKvadro.csproj.CoreCompileInputs.cache
+C:\Lesson\app_cs\ConsoleAppCalculeteKvadro\ConsoleAppCalculeteKvadro\obj\Debug\net8.0\ConsoleAppCalculeteKvadro.sourcelink.json
+C:\Lesson\app_cs\ConsoleAppCalculeteKvadro\ConsoleAppCalculeteKvadro\obj\Debug\net8.0\ConsoleAppCalculeteKvadro.dll
+C:\Lesson\app_cs\ConsoleAppCalculeteKvadro\ConsoleAppCalculeteKvadro\obj\Debug\net8.0\refint\ConsoleAppCalculeteKvadro.dll
+C:\Lesson\app_cs\ConsoleAppCalculeteKvadro\ConsoleAppCalculeteKvadro\obj\Debug\net8.0\ConsoleAppCalculeteKvadro.pdb
+C:\Lesson\app_cs\ConsoleAppCalculeteKvadro\ConsoleAppCalculeteKvadro\obj\Debug\net8.0\ConsoleAppCalculeteKvadro.genruntimeconfig.cache
+C:\Lesson\app_cs\ConsoleAppCalculeteKvadro\ConsoleAppCalculeteKvadro\obj\Debug\net8.0\ref\ConsoleAppCalculeteKvadro.dll

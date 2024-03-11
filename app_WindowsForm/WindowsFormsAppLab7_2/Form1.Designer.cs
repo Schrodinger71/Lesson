@@ -46,6 +46,7 @@
             this.listBoxLeft.Name = "listBoxLeft";
             this.listBoxLeft.Size = new System.Drawing.Size(247, 324);
             this.listBoxLeft.TabIndex = 0;
+            this.listBoxLeft.SelectedIndexChanged += new System.EventHandler(this.listBoxLeft_SelectedIndexChanged);
             // 
             // listBoxRight
             // 
@@ -56,6 +57,7 @@
             this.listBoxRight.Name = "listBoxRight";
             this.listBoxRight.Size = new System.Drawing.Size(264, 324);
             this.listBoxRight.TabIndex = 1;
+            this.listBoxRight.SelectedIndexChanged += new System.EventHandler(this.listBoxRight_SelectedIndexChanged);
             // 
             // textBoxHead
             // 
@@ -125,6 +127,7 @@
             this.Controls.Add(this.listBoxLeft);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
