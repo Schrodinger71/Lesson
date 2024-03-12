@@ -16,12 +16,15 @@ jobs:
       run:
         working-directory: app_WindowsForm/WindowsFormsAppFieldIntersectionPoint
     steps:
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@v2
 
     - name: Setup MSBuild
-      uses: microsoft/setup-msbuild@v1
-    #   with:
-    #     dotnet-version: 8.0.x
+      uses: microsoft/setup-msbuild@v2
+  
+    - name: Build app for release
+      run: msbuild app_WindowsForm\WindowsFormsAppFieldIntersectionPoint\WindowsFormsApp1.csproj -t:rebuild -verbosity:diag -property:Configuration=Release
+#C:app_WindowsForm\WindowsFormsAppFieldIntersectionPoint\WindowsFormsApp1.csproj
+
     - name: Setup NuGet
       uses: NuGet/setup-nuget@v1.0.2
 
