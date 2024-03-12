@@ -22,7 +22,7 @@ jobs:
       uses: microsoft/setup-msbuild@v2
   
     - name: Build app for release
-      run: msbuild app_WindowsForm\WindowsFormsAppFieldIntersectionPoint\WindowsFormsApp1.csproj -t:rebuild -verbosity:diag -property:Configuration=Release
+      run: msbuild app_WindowsForm\WindowsFormsAppFieldIntersectionPoint\WindowsFormsApp1.sln #-t:rebuild -verbosity:diag -property:Configuration=Release
 #C:app_WindowsForm\WindowsFormsAppFieldIntersectionPoint\WindowsFormsApp1.csproj
 
     - name: Setup NuGet
