@@ -10,29 +10,38 @@ on:
   workflow_dispatch:
 
 jobs:
-  build-dotnet-app:
-
+  build-dotnet-app1:
     runs-on: ubuntu-latest
-    
     defaults:
       run:
-        working-directory: app_cs/ConsoleAppCalculeteKvadro/ConsoleAppCalculeteKvadro
-
+        working-directory: app_cs/ConsoleAppCalculeteKvadro
     steps:
     - uses: actions/checkout@v4
-    
     - name: Setup .NET
       uses: actions/setup-dotnet@v4
       with:
         dotnet-version: 8.0.x
-  
     - name: Restore dependencies
       run: dotnet restore
-      
     - name: Build
       run: dotnet build --no-restore
-      
     - name: Test
       run: dotnet test --no-build --verbosity normal
-  
-    
+      
+  build-dotnet-app2:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: app_cs/MiniTestConsoleGitHubApp
+    steps:
+    - uses: actions/checkout@v4
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v4
+      with:
+        dotnet-version: 8.0.x
+    - name: Restore dependencies
+      run: dotnet restore
+    - name: Build
+      run: dotnet build --no-restore
+    - name: Test
+      run: dotnet test --no-build --verbosity normal
