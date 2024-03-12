@@ -170,6 +170,7 @@ namespace WindowsFormsApp1
 }
 ```
 </details>
+
 ## Документация
 
 ### Описание приложения
