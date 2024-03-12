@@ -1,13 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace WindowsFormsAppLab7_2
 {
@@ -26,26 +19,6 @@ namespace WindowsFormsAppLab7_2
             textBoxHead.Clear();
 
         }
-        //private void buttonDelete_Click(object sender, EventArgs e)
-        //{
-        //    // Создаем список для хранения выбранных элементов
-        //    List<string> selectedItems = new List<string>();
-        //    // Добавляем выбранные элементы из listBoxLeft в список selectedItems
-        //    foreach (var selectedItem in listBoxLeft.SelectedItems)
-        //    {
-        //        selectedItems.Add(selectedItem.ToString());
-        //    }
-        //    foreach (var selectedItem in listBoxRight.SelectedItems)
-        //    {
-        //        selectedItems.Add(selectedItem.ToString());
-        //    }
-        //    // Удаляем выбранные элементы из listBoxLeft
-        //    foreach (string item in selectedItems)
-        //    {
-        //        listBoxLeft.Items.Remove(item);
-        //        listBoxRight.Items.Remove(item);
-        //    }
-        //}
 
         private void buttonDelete_Click(object sender, EventArgs e)
         {
