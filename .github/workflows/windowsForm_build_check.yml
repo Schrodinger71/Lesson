@@ -1,0 +1,31 @@
+name: Windows Form Build Check
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+jobs:
+  build-windowsFormApp1:
+    runs-on: windows-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Setup MSBuild
+      uses: microsoft/setup-msbuild@v1.0.2
+    - name: Build solution
+      run: msbuild app_WindowsForm\WindowsFormsAppFieldIntersectionPoint\WindowsFormsApp1.sln /p:Configuration=Release
+    - name: Build app for release
+      run: msbuild app_WindowsForm\WindowsFormsAppFieldIntersectionPoint\WindowsFormsApp1.csproj -t:rebuild -verbosity:diag -property:Configuration=Release
+
+  build-windowsFormApp2:
+    runs-on: windows-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Setup MSBuild
+      uses: microsoft/setup-msbuild@v1.0.2
+    - name: Build solution
+      run: msbuild app_WindowsForm\WindowsFormsAppLab7_2\WindowsFormsAppLab7_2.csproj /p:Configuration=Release
+    - name: Build app for release
+      run: msbuild app_WindowsForm\WindowsFormsAppLab7_2\WindowsFormsAppLab7_2.csproj -t:rebuild -verbosity:diag -property:Configuration=Release
