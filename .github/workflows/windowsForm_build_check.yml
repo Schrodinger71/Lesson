@@ -29,10 +29,10 @@ jobs:
       uses: NuGet/setup-nuget@v2.0.0
 
     - name: Restore NuGet packages
-      run: nuget restore app_WindowsForm\WindowsFormsAppFieldIntersectionPoint\WindowsFormsApp1.sln
+      run: nuget restore app_WindowsForm/WindowsFormsAppFieldIntersectionPoint/WindowsFormsApp1.sln
 
     - name: Build app for release
-      run: msbuild app_WindowsForm\WindowsFormsAppFieldIntersectionPoint\WindowsFormsApp1.sln #/p:Configuration=Release
+      run: msbuild app_WindowsForm/WindowsFormsAppFieldIntersectionPoint/WindowsFormsApp1.sln #/p:Configuration=Release
       
 #   build-dotnet-app2:
 #     runs-on: [windows-latest]
