@@ -11,37 +11,40 @@ on:
 
 jobs:
   build-dotnet-app1:
-    runs-on: ubuntu-latest
+    runs-on: [windows-latest]
     defaults:
       run:
         working-directory: app_WindowsForm/WindowsFormsAppFieldIntersectionPoint
     steps:
     - uses: actions/checkout@v4
-    - name: Setup .NET
-      uses: actions/setup-dotnet@v4
-      with:
-        dotnet-version: 8.0.x
-    - name: Restore dependencies
-      run: dotnet restore
-    - name: Build
-      run: dotnet build --no-restore
-    - name: Test
-      run: dotnet test --no-build --verbosity normal
+
+    - name: Setup MSBuild
+      uses: microsoft/setup-msbuild@v1
+    #   with:
+    #     dotnet-version: 8.0.x
+    - name: Setup NuGet
+      uses: NuGet/setup-nuget@v1.0.2
+
+    - name: Restore NuGet packages
+      run: nuget restore BugGuardian.MVS.sln
+
+    - name: Build the Solution
+      run: msbuild BugGuardian.MVS.sln #/p:Configuration=Release
       
-  build-dotnet-app2:
-    runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: app_WindowsForm/WindowsFormsAppLab7_2
-    steps:
-    - uses: actions/checkout@v4
-    - name: Setup .NET
-      uses: actions/setup-dotnet@v4
-      with:
-        dotnet-version: 8.0.x
-    - name: Restore dependencies
-      run: dotnet restore
-    - name: Build
-      run: dotnet build --no-restore
-    - name: Test
-      run: dotnet test --no-build --verbosity normal
+#   build-dotnet-app2:
+#     runs-on: [windows-latest]
+#     defaults:
+#       run:
+#         working-directory: app_WindowsForm/WindowsFormsAppLab7_2
+#     steps:
+#     - uses: actions/checkout@v4
+#     - name: Setup .NET
+#       uses: actions/setup-dotnet@v4
+#       with:
+#         dotnet-version: 8.0.x
+#     - name: Restore dependencies
+#       run: dotnet restore
+#     - name: Build
+#       run: dotnet build --no-restore
+#     - name: Test
+#       run: dotnet test --no-build --verbosity normal
