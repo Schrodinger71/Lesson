@@ -16,7 +16,7 @@ jobs:
     
     defaults:
       run:
-        working-directory: app_cs/ConsoleAppCalculeteKvadro
+        working-directory: app_cs/ConsoleAppCalculeteKvadro/ConsoleAppCalculeteKvadro
 
     steps:
     - uses: actions/checkout@v4
