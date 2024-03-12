@@ -5,13 +5,11 @@ on:
     branches: [ main ]
   pull_request:
     branches: [ main ]
-
-  # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
 jobs:
   build-dotnet-app1:
-    runs-on: [windows-latest]
+    runs-on: windows-latest
     defaults:
       run:
         working-directory: app_WindowsForm/WindowsFormsAppFieldIntersectionPoint
@@ -21,18 +19,18 @@ jobs:
     - name: Setup MSBuild
       uses: microsoft/setup-msbuild@v2
   
-#     - name: Build app for release
-#       run: msbuild app_WindowsForm\WindowsFormsAppFieldIntersectionPoint\WindowsFormsApp1.sln #-t:rebuild -verbosity:diag -property:Configuration=Release
-# #C:app_WindowsForm\WindowsFormsAppFieldIntersectionPoint\WindowsFormsApp1.csproj
-
     - name: Setup NuGet
       uses: NuGet/setup-nuget@v2.0.0
 
     - name: Restore NuGet packages
-      run: nuget restore app_WindowsForm/WindowsFormsAppFieldIntersectionPoint/WindowsFormsApp1.sln
+      run: nuget restore WindowsFormsApp1/WindowsFormsApp1.sln
+
+    - name: Use NuGet to install .NET Framework 4.8
+      run: nuget install Microsoft.Net.Compilers -Version 3.8.0
 
     - name: Build app for release
-      run: msbuild app_WindowsForm/WindowsFormsAppFieldIntersectionPoint/WindowsFormsApp1.sln #/p:Configuration=Release
+      run: msbuild WindowsFormsApp1/WindowsFormsApp1.sln
+
       
 #   build-dotnet-app2:
 #     runs-on: [windows-latest]
