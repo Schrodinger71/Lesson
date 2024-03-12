@@ -2,84 +2,30 @@ name: Windows Form Build Check
 
 on:
   push:
-    branches:
-      - main
+    branches: [ main ]
   pull_request:
-    branches:
-      - main
-
+    branches: [ main ]
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
 jobs:
-  build:
+  build-windowsFormApp1:
     runs-on: windows-latest
-
     steps:
     - uses: actions/checkout@v2
-
     - name: Setup MSBuild
       uses: microsoft/setup-msbuild@v1.0.2
-
     - name: Build solution
       run: msbuild app_WindowsForm\WindowsFormsAppFieldIntersectionPoint\WindowsFormsApp1.sln /p:Configuration=Release
+    - name: Build app for release
+      run: msbuild app_WindowsForm\WindowsFormsAppFieldIntersectionPoint\WindowsFormsApp1.csproj -t:rebuild -verbosity:diag -property:Configuration=Release
 
-    - name: Run tests
-      run: msbuild app_WindowsForm\WindowsFormsAppFieldIntersectionPoint\WindowsFormsApp1.sln /t:Test /p:Configuration=Release
-
-
-
-
-
-
-
-
-
-
-
-
-# name: Build Windows Form
-# on:
-#   push:
-#     branches: [ main ]
-#   pull_request:
-#     branches: [ main ]
-
-#   # Allows you to run this workflow manually from the Actions tab
-#   workflow_dispatch:
-
-# jobs:
-#   build-dotnet-app1:
-#     runs-on: [windows-latest]
-#     defaults:
-#       run:
-#         working-directory: app_WindowsForm/WindowsFormsAppFieldIntersectionPoint
-#     steps:
-#     - uses: actions/checkout@v2
-
-#     - name: Setup MSBuild
-#       uses: microsoft/setup-msbuild@v2
-  
-#     - name: Setup NuGet
-#       uses: NuGet/setup-nuget@v2.0.0
-
-#     - name: Restore NuGet packages
-#       run: nuget restore app_WindowsForm/WindowsFormsAppFieldIntersectionPoint/WindowsFormsApp1.sln
-
-#     - name: Build app for release
-#       run: msbuild app_WindowsForm/WindowsFormsAppFieldIntersectionPoint/WindowsFormsApp1.sln #/p:Configuration=Release
-      
-#   build-dotnet-app2:
-#     runs-on: [windows-latest]
-#     defaults:
-#       run:
-#         working-directory: app_WindowsForm/WindowsFormsAppLab7_2
-#     steps:
-#     - uses: actions/checkout@v4
-#     - name: Setup .NET
-#       uses: actions/setup-dotnet@v4
-#       with:
-#         dotnet-version: 8.0.x
-#     - name: Restore dependencies
-#       run: dotnet restore
-#     - name: Build
-#       run: dotnet build --no-restore
-#     - name: Test
-#       run: dotnet test --no-build --verbosity normal
+  build-windowsFormApp2:
+    runs-on: windows-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Setup MSBuild
+      uses: microsoft/setup-msbuild@v1.0.2
+    - name: Build solution
+      run: msbuild app_WindowsForm\WindowsFormsAppLab7_2\WindowsFormsAppLab7_2.csproj /p:Configuration=Release
+    - name: Build app for release
+      run: msbuild app_WindowsForm\WindowsFormsAppLab7_2\WindowsFormsAppLab7_2.csproj -t:rebuild -verbosity:diag -property:Configuration=Release
