@@ -1,4 +1,4 @@
-name: Windows Form Build Check
+name: .NET Framework for WindowsForm`s Build Check
 
 on:
   push:
