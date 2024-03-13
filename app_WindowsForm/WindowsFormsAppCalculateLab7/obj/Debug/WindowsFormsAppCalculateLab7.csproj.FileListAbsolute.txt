@@ -1,0 +1,10 @@
+C:\Lesson\app_WindowsForm\WindowsFormsAppCalculateLab7\bin\Debug\WindowsFormsAppCalculateLab7.exe.config
+C:\Lesson\app_WindowsForm\WindowsFormsAppCalculateLab7\bin\Debug\WindowsFormsAppCalculateLab7.exe
+C:\Lesson\app_WindowsForm\WindowsFormsAppCalculateLab7\bin\Debug\WindowsFormsAppCalculateLab7.pdb
+C:\Lesson\app_WindowsForm\WindowsFormsAppCalculateLab7\obj\Debug\WindowsFormsAppCalculateLab7.csproj.AssemblyReference.cache
+C:\Lesson\app_WindowsForm\WindowsFormsAppCalculateLab7\obj\Debug\WindowsFormsAppCalculateLab7.Form1.resources
+C:\Lesson\app_WindowsForm\WindowsFormsAppCalculateLab7\obj\Debug\WindowsFormsAppCalculateLab7.Properties.Resources.resources
+C:\Lesson\app_WindowsForm\WindowsFormsAppCalculateLab7\obj\Debug\WindowsFormsAppCalculateLab7.csproj.GenerateResource.cache
+C:\Lesson\app_WindowsForm\WindowsFormsAppCalculateLab7\obj\Debug\WindowsFormsAppCalculateLab7.csproj.CoreCompileInputs.cache
+C:\Lesson\app_WindowsForm\WindowsFormsAppCalculateLab7\obj\Debug\WindowsFormsAppCalculateLab7.exe
+C:\Lesson\app_WindowsForm\WindowsFormsAppCalculateLab7\obj\Debug\WindowsFormsAppCalculateLab7.pdb

@@ -17,7 +17,7 @@ jobs:
     - name: Build solution
       run: msbuild app_WindowsForm\WindowsFormsAppFieldIntersectionPoint\WindowsFormsApp1.sln /p:Configuration=Release
     - name: Build app for release
-      run: msbuild app_WindowsForm\WindowsFormsAppFieldIntersectionPoint\WindowsFormsApp1.csproj -t:rebuild -verbosity:diag -property:Configuration=Release
+      run: msbuild app_WindowsForm\WindowsFormsAppFieldIntersectionPoint\WindowsFormsApp1.sln -t:rebuild -verbosity:diag -property:Configuration=Release
 
   build-windowsFormApp2:
     runs-on: windows-latest
@@ -26,6 +26,19 @@ jobs:
     - name: Setup MSBuild
       uses: microsoft/setup-msbuild@v1.0.2
     - name: Build solution
-      run: msbuild app_WindowsForm\WindowsFormsAppLab7_2\WindowsFormsAppLab7_2.csproj /p:Configuration=Release
+      run: msbuild app_WindowsForm\WindowsFormsAppLab7_2\WindowsFormsAppLab7_2.sln /p:Configuration=Release
     - name: Build app for release
-      run: msbuild app_WindowsForm\WindowsFormsAppLab7_2\WindowsFormsAppLab7_2.csproj -t:rebuild -verbosity:diag -property:Configuration=Release
+      run: msbuild app_WindowsForm\WindowsFormsAppLab7_2\WindowsFormsAppLab7_2.sln -t:rebuild -verbosity:diag -property:Configuration=Release
+
+  build-windowsFormApp3:
+    runs-on: windows-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Setup MSBuild
+      uses: microsoft/setup-msbuild@v1.0.2
+    - name: Build solution
+      run: msbuild app_WindowsForm\WindowsFormsAppCalculateLab7\WindowsFormsAppCalculateLab7.sln /p:Configuration=Release
+    - name: Build app for release
+      run: msbuild app_WindowsForm\WindowsFormsAppCalculateLab7\WindowsFormsAppCalculateLab7.sln -t:rebuild -verbosity:diag -property:Configuration=Release
+
+
