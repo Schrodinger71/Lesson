@@ -1,4 +1,4 @@
-name: Build dotnet8 test
+name: DotNET8_Build Check
 
 on:
   push:
@@ -10,7 +10,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  build-dotnet-app1:
+  build-dotnet8-app1:
     runs-on: ubuntu-latest
     defaults:
       run:
@@ -28,7 +28,7 @@ jobs:
     - name: Test
       run: dotnet test --no-build --verbosity normal
       
-  build-dotnet-app2:
+  build-dotnet8-app2:
     runs-on: ubuntu-latest
     defaults:
       run:
