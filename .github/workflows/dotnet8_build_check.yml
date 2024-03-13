@@ -1,4 +1,4 @@
-name: DotNET8_Build Check
+name: DotNET8 Build Check
 
 on:
   push:
