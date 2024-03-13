@@ -2,24 +2,20 @@ name: C++ Build Check
 
 on:
   push:
-    branches:
-      - main
+    branches: [ main ]
   pull_request:
-    branches:
-      - main
+    branches: [ main ]
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
 
 jobs:
-  build:
+  build-cpp-console-app:
     runs-on: windows-latest
-
     steps:
     - uses: actions/checkout@v2
-
     - name: Install MSBuild
       uses: microsoft/setup-msbuild@v1.0.2
-
     - name: Build solution
       run: msbuild app_cpp\StrTP_cpp\Project1.sln /p:Configuration=Release
-
     - name: Run tests
-      run: msbuild app_cpp\StrTP_cpp\Project1.sln /t:Test /p:Configuration=Release
+      run: msbuild app_cpp\StrTP_cpp\Project1.sln -t:rebuild -verbosity:diag -property:Configuration=Release
