@@ -1,32 +1,27 @@
-<!-- ЭТО ШАБЛОН ВАШЕГО PULL REQUEST. Текст между стрелками - это комментарии - они не будут видны в PR. -->
+<!-- THIS IS THE TEMPLATE FOR YOUR PULL REQUEST. The text between the arrows are comments - they will not be visible in PR. -->
 
-## Описание PR
-<!-- Ниже опишите ваш Pull Request. Что он изменяет? На что еще это может повлиять? Постарайтесь описать все внесённые вами изменения! -->
+## Description of PR
+<!-- Describe your Pull Request below. What is he changing? What else can it affect? Try to describe all the changes you have made! -->
+**Checks:**
+<!-- Performing all the following actions, if it is acceptable for the type of changes, will greatly speed up the analysis of your PR -->
+- [ ] The PR is completely completed and I do not need help to finish it.
+- [ ] I have carefully reviewed all my changes and found no bugs in them.
+- [ ] I started a local server with my changes and tested everything.
+- [ ] I added a screenshot/video of the in-game PR demonstration, **or** this PR does not require it.
 
-**Проверки**
-<!-- Выполнение всех следующих действий, если это приемлемо для вида изменений сильно ускорит разбор вашего PR -->
-- [ ] PR полностью завершён и мне не нужна помощь чтобы его закончить.
-- [ ] Я внимательно просмотрел все свои изменения и багов в них не нашёл.
-- [ ] Я запускал локальный сервер со своими изменениями и всё протестировал.
-- [ ] Я добавил скриншот/видео демонстрации PR в игре, **или** этот PR этого не требует.
-
-**Изменения**
+**Changes:**
 <!--
-Здесь вы можете написать список изменений, который будет автоматически добавлен в игру, когда ваш PR будет принят.
-
-В журнал изменений следует помещать только то, что действительно важно игрокам.
-
-В списке изменений тип значка не является часть предложения, поэтому явно указывайте - Добавлен, Удалён, Изменён.
-плохо: - add: Новый инструмент для инженеров
-хорошо: - add: Добавлен новый инструмент для инженеров
-
-Вы можете указать своё имя после символа :cl: именно оно будет отображаться в журнале изменений (иначе будет использоваться ваше имя на GitHub)
-Например: :cl: Ian
-
+Here you can write a list of changes that will be automatically added to the game when your PR is accepted.
+Only what is really important to the players should be placed in the changelog.
+In the list of changes, the icon type is not part of the offer, so specify obviously - Added, Deleted, Changed.
+bad: - add: New tool for engineers
+good: - add: Added new tool for engineers
+You can specify your name after the symbol :cl: this is what will be displayed in the changelog (otherwise your name on GitHub will be used)
+For example: :cl: Ian
 -->
 
 :cl:
-- add: Добавлено веселье!
-- remove: Убрано веселье!
-- tweak: Изменено веселье!
-- fix: Исправлено веселье!
+- add: Added fun!
+- remove: The fun is gone!
+- tweak: Changed the fun!
+- fix: Fixed the fun!
