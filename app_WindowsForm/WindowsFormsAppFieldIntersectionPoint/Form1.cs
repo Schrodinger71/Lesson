@@ -4,12 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement.ToolBar;
-using TextBox = System.Windows.Forms.TextBox;
+
 
 namespace WindowsFormsApp1
 {
@@ -57,7 +52,7 @@ namespace WindowsFormsApp1
                 textBox.Clear();
             }
         }
-        private void ClearButton_Click(object sender, EventArgs e)
+        private void ClearButton_ct sender, EventArgs e)
         {
             ClearTextBoxes();
         }
@@ -98,7 +93,7 @@ namespace WindowsFormsApp1
             //  m1 * x + b1 = m2 * x + b2
 
             double m1 = (y2 - y1) / (x2 - x1);
-            if (x2 == x1) m1 = 1100000000000000;
+            if (x2 == x1 1100000000000000;
             double b1 = y1 - m1 * x1;
 
             double m2 = (y4 - y3) / (x4 - x3);

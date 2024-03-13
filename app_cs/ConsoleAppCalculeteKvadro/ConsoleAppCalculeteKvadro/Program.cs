@@ -20,7 +20,7 @@ internal class Program
         double a, b, c, d, x1, x2;
         try
         {
-            Console.Write("Введите a: ");
+            Console.Write("Введит
             a = Convert.ToDouble(Console.ReadLine());
             Console.Write("Введите b: ");
             b = Convert.ToDouble(Console.ReadLine());

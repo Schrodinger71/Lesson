@@ -18,8 +18,7 @@ namespace MiniTestConsoleGitHub
             string[] input = Console.ReadLine().Split(' ');
             for (int i = 0; i < length; i++)
             {
-                arr[i] = int.Parse(input[i]);
-            }
+                arr[i] = int.Parse(
 
             Console.Write("Введенный массив:\n[");
 

@@ -7,107 +7,86 @@ using namespace std;
 class StringTP {
 public:
     static const int MAX_SIZE = 255;
-    char data[MAX_SIZE]; // Массив символов для хранения строки
-    StringTP() // Конструктор по умолчанию
+    char data[MAX_SIZE]; // пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+    StringTP() // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
     {
         data[0] = 0;
     }; 
-    // Методы класса
-    int length() const; // Возвращает длину строки
-    int findSubstring(const char* substring) const; // Ищет подстроку и возвращает её позицию
-    void removeSubstring(const char* substring); // Удаляет подстроку из строки
-    void insertSubstring(const char* substring, int position); // Вставляет подстроку в указанную позицию
-    void concatenate(const StringTP& other); // Объединяет текущую строку с другой
-    void display() const; // Выводит строку на экран
+    // пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+    int length() const; // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+    int findSubstring(const char* substring) const; // пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+    void removeSubstring(const char* substring); // пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+    void insertSubstring(const char* substring, int position); // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+    void concatenate(const StringTP& other); // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+    void display() const; // пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
 
-    friend istream& operator>>(std::istream& is, StringTP& str); // Перегрузка оператора ввода
-    friend ostream& operator<<(std::ostream& os, const StringTP& str); // Перегрузка оператора вывода
+    friend istream& operator>>(std::istream& is, StringTP& str); // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
+    friend ostream& operator<<(std::ostream& os, const StringTP& str); // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 
 
     StringTP& operator=(const StringTP& other)
     {
-        if (this != &other) // Проверка на самоприсваивание
+        if (this != &other) // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
         {
-            int len = other.length(); // Получаем длину строки в другом объекте
+            int len = other.length(); // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
             if (len <= MAX_SIZE - 1)
             {
-                memcpy(data, other.data, len + 1); // Копируем данные из другой строки в текущую, включая завершающий нулевой символ
+                memcpy(data, other.data, len + 1); // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
             }
             else
             {
-                memcpy(data, other.data, MAX_SIZE - 1); // Если строка в другом объекте длиннее, обрезаем её до MAX_SIZE - 1 символов
-                data[MAX_SIZE - 1] = '\0'; // Устанавливаем завершающий нулевой символ
-            }
-        }
-        return *this;
-    }
-
-    StringTP operator+(const StringTP& other)
-    {
-        StringTP result = *this; // Создаем копию текущего объекта
-        result.concatenate(other); // Вызываем метод concatenate для объединения строк
-        return result;
-    }
-
-    ~StringTP()
-    {
-        // Освобождение памяти для массива символов data
-    }
-    
+                memcpy(data,
 };
 
 //StringTP::StringTP() {
-//    data[0] = 0; // Инициализация длины строки значением 0
+//    data[0] = 0; // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ 0
 //}
 
 int StringTP::length() const {
-    return static_cast<int>(data[0]); // Возвращает длину строки (хранится в первом байте)
+    return static_cast<int>(data[0]); // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ (пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ)
 }
 
 int StringTP::findSubstring(const char* substring) const {
-    const char* result = strstr(data + 1, substring); // Поиск подстроки, начиная со второго символа
+    const char* result = strstr(data + 1, substring); // пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
     if (result == nullptr) {
-        return -1; // Подстрока не найдена
+        return -1; // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
     }
-    return static_cast<int>(result - data); // Возвращает позицию подстроки
+    return static_cast<int>(result - data); // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 }
 
 void StringTP::removeSubstring(const char* substring) {
-    int index = findSubstring(substring); // Находим позицию подстроки
+    int index = findSubstring(substring); // пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
     if (index != -1) {
         int substringLength = static_cast<int>(strlen(substring));
-        memmove(data + index, data + index + substringLength, MAX_SIZE - index - substringLength); // Удаляем подстроку
-        data[0] -= substringLength; // Корректируем длину строки
+        memmove(data + index, data + index + substringLength, MAX_SIZE - index - substringLength); // пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+        data[0] -= substringLength; // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
     }
 }
 
 void StringTP::insertSubstring(const char* substring, int position) {
     int substringLength = static_cast<int>(strlen(substring));
     if (position >= 0 && position <= length() && length() + substringLength <= MAX_SIZE) {
-        memmove(data + position + substringLength, data + position, MAX_SIZE - position - substringLength); // Вставляем подстроку
+        memmove(data + position + substringLength, data + position, MAX_SIZE - position - substringLength); // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
         memcpy(data + position, substring, substringLength);
-        data[0] += substringLength; // Корректируем длину строки
+        data[0] += substringLength; // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
     }
 }
 
 void StringTP::concatenate(const StringTP& other) {
-    int totalLength = length() + other.length();
-    if (totalLength <= MAX_SIZE) {
-        memcpy(data + length() + 1, other.data + 1, other.length()); // Объединяем строки
-        data[0] = totalLength; // Корректируем длину строки
+    int totalLength = lengt пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
     }
 }
 
 void StringTP::display() const {
     for (int i = 1; i <= length(); ++i) {
-        cout << data[i]; // Выводим символы строки
+        cout << data[i]; // пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
     }
     cout << endl;
 }
 
 istream& operator>>(std::istream& is, StringTP& str) {
     char buffer[StringTP::MAX_SIZE];
-    is.ignore(); // Игнорируем предыдущий символ новой строки или пробела
+    is.ignore(); // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
     is.getline(buffer, StringTP::MAX_SIZE);
     int length = static_cast<int>(strlen(buffer));
     if (length <= StringTP::MAX_SIZE - 1) {
@@ -120,7 +99,7 @@ istream& operator>>(std::istream& is, StringTP& str) {
 ostream& operator<<(std::ostream& os, const StringTP& str)
 {
     for (int i = 1; i <= str.data[0]; ++i) {
-        os << str.data[i]; // Выводим символы строки из объекта StringTP в поток os
+        os << str.data[i]; // пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ StringTP пїЅ пїЅпїЅпїЅпїЅпїЅ os
     }
     return os;
 }
@@ -129,7 +108,7 @@ ostream& operator<<(std::ostream& os, const StringTP& str)
 int main() 
 {
     setlocale(LC_ALL, "Russian");
-    system("Title String Turbo Pascal"); // Устанавливаем заголовок окна консоли
+    system("Title String Turbo Pascal"); // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 
     StringTP myString, str2;
     cout << "myString = ";
@@ -139,92 +118,86 @@ int main()
     cout << "myString = " << myString << endl;
     str2.insertSubstring("abc", 2);
     cout << "myString = " << myString << endl;
-    cout << "str2 = " << str2 << endl;
-    StringTP str3;
-    StringTP str4;
-    cin >> str3;
-    cin >> str4;
-    cout << "str3 = " << str3 << endl;
-    cout << "str4 = " << str4 << endl;
+    cout << "str2 =
     StringTP result = str3 + str4;
     cout << "str3 + str4 = " << result << endl;
     result.display();
 
     int choice;
     //do {
-    //    cout << "\n1. Получить длину\n";
-    //    cout << "2. Найти подстроку\n";
-    //    cout << "3. Удалить подстроку\n";
-    //    cout << "4. Вставить подстроку\n";
-    //    cout << "5. Объединить строки\n";
-    //    cout << "6. Отобразить строку\n";
-    //    cout << "7. Ввести строку\n";
-    //    cout << "0. Выйти\n";
-    //    cout << "Введите ваш выбор: ";
+    //    cout << "\n1. пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ\n";
+    //    cout << "2. пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ\n";
+    //    cout << "3. пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ\n";
+    //    cout << "4. пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ\n";
+    //    cout << "5. пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ\n";
+    //    cout << "6. пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ\n";
+    //    cout << "7. пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ\n";
+    //    cout << "0. пїЅпїЅпїЅпїЅпїЅ\n";
+    //    cout << "пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ: ";
     //    cin >> choice;
 
     //    switch (choice) {
     //    case 1:
-    //        cout << "Длина строки: " << myString.length() << endl;
+    //        cout << "пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ: " << myString.length() << endl;
     //        break;
     //    case 2:
     //    {
     //        char substring[StringTP::MAX_SIZE];
-    //        cout << "Введите подстроку для поиска: ";
+    //        cout << "пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ: ";
     //        cin >> substring;
     //        int index = myString.findSubstring(substring);
     //        if (index != -1) {
-    //            cout << "Подстрока найдена в позиции: " << index << endl;
+    //            cout << "пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ: " << index << endl;
     //        }
     //        else {
-    //            cout << "Подстрока не найдена\n";
+    //            cout << "пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ\n";
     //        }
     //    }
     //    break;
     //    case 3:
     //    {
     //        char substring[StringTP::MAX_SIZE];
-    //        cout << "Введите подстроку для удаления: ";
+    //        cout << "пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ: ";
     //        cin >> substring;
     //        myString.removeSubstring(substring);
-    //        cout << "Подстрока удалена\n";
+    //        cout << "пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ\n";
     //    }
     //    break;
     //    case 4:
     //    {
     //        char substring[StringTP::MAX_SIZE];
     //        int position;
-    //        cout << "Введите подстроку для вставки: ";
+    //        cout << "пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ: ";
     //        cin >> substring;
-    //        cout << "Введите позицию для вставки: ";
+    //        cout << "пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ: ";
     //        cin >> position;
     //        myString.insertSubstring(substring, position);
-    //        cout << "Подстрока вставлена\n";
+    //        cout << "пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ\n";
     //    }
     //    break;
     //    case 5:
     //    {
     //        StringTP otherString;
-    //        cout << "Введите строку для объединения: ";
+    //        cout << "пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ: ";
     //        cin >> otherString;
     //        myString.concatenate(otherString);
-    //        cout << "Строки объединены\n";
+    //        cout << "пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ\n";
     //    }
     //    break;
     //    case 6:
-    //        cout << "Текущая строка: ";
+    //        cout << "пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ: ";
     //        myString.display();
     //        break;
     //    case 7:
-    //        cout << "Введите строку: ";
+    //        cout << "пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ: ";
     //        cin >> myString;
-    //        cout << "Строка введена\n";
+    //        cout << "пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ\n";
     //        break;
     //    case 0:
-    //        cout << "Выход...\n";
+    //        cout << "пїЅпїЅпїЅпїЅпїЅ...\n";
     //        break;
     //    default:
-    //        cout << "Неверный выбор\n";
+    //        cout << "пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ\n";
     //    }
 
     //} while (choice != 0);

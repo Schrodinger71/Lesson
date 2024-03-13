@@ -10,19 +10,7 @@ namespace WindowsFormsAppLab7_2
         {
             InitializeComponent();
             listBoxLeft.SelectionMode = SelectionMode.MultiExtended;
-            listBoxRight.SelectionMode = SelectionMode.MultiExtended;
-        }
-
-        private void buttonAdd_Click(object sender, EventArgs e)
-        {
-            listBoxLeft.Items.Add(textBoxHead.Text);
-            textBoxHead.Clear();
-
-        }
-
-        private void buttonDelete_Click(object sender, EventArgs e)
-        {
-            // Создаем список для хранения выбранных элементов
+            listBoxRight.SelectionMode = Sнных элементов
             List<string> selectedItems = new List<string>();
             // Добавляем выбранные элементы из listBoxLeft в список selectedItems
             foreach (var selectedItem in listBoxLeft.SelectedItems)
