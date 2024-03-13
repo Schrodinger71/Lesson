@@ -1,5 +1,5 @@
 -------------------------
-### Тесты:
+### Tests:
 [![DotNET8_Build Check](https://github.com/Schrodinger71/Lesson/actions/workflows/dotnet8_build_check.yml/badge.svg?branch=main)](https://github.com/Schrodinger71/Lesson/actions/workflows/dotnet8_build_check.yml)
 
 [![C++ Build Check](https://github.com/Schrodinger71/Lesson/actions/workflows/build_cpp_check.yml/badge.svg?branch=main)](https://github.com/Schrodinger71/Lesson/actions/workflows/build_cpp_check.yml)
