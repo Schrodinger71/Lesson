@@ -1,5 +1,5 @@
 -------------------------
-### Тесты:
+### Tests:
 [![DotNET8_Build Check](https://github.com/Schrodinger71/Lesson/actions/workflows/dotnet8_build_check.yml/badge.svg?branch=main)](https://github.com/Schrodinger71/Lesson/actions/workflows/dotnet8_build_check.yml)
 
 [![C++ Build Check](https://github.com/Schrodinger71/Lesson/actions/workflows/build_cpp_check.yml/badge.svg?branch=main)](https://github.com/Schrodinger71/Lesson/actions/workflows/build_cpp_check.yml)
@@ -7,20 +7,20 @@
 [![.NET Framework for WindowsForm`s_Build_Check](https://github.com/Schrodinger71/Lesson/actions/workflows/windowsForm_build_check.yml/badge.svg?branch=main)](https://github.com/Schrodinger71/Lesson/actions/workflows/windowsForm_build_check.yml)
 
 --------------------------
-# ***Приветствую в моем репозитории!***
+# ***Welcome to my repository!***
 
-***Здесь я иногда выкладываю консольные мини-приложения и другие проекты. Если у вас есть какие-то идеи или предложения, не стесняйтесь делиться ими со мной!***
+***Here I sometimes upload console mini-applications and other projects. If you have any ideas or suggestions, feel free to share them with me!***
 
-## ***Структура репозитория:***
+## ***Repository structure:***
 
-- *app_cpp/ - папка с консольным приложениями на **C++***
-- *app_cs/ - папка с консольным приложениями на **C#***
-- *app_py/ - папка с приложениями на **Python***
-- *app_WindowsForm/ - папка с проектами **Windows Forms .NET***
-- *other/ - папка с другими проектами*
+- *app_cpp/ - folder with console applications in **C++***
+- *app_cs/ - folder with console applications in **C#***
+- *pp_py/ - folder with applications in **Python***
+- *app_Windows Form/ - folder with projects **Windows Forms .NET***
+- *other/ - folder with other projects*
 
 
-## ***Как использовать:***
+## ***How to use:***
 
-***Просто клонируйте репозиторий и изучайте код каждого проекта. Вы также можете вносить свои правки или улучшения, и я буду рад принять их!***
+***Just clone the repository and study the code of each project. You can also make your own edits or improvements, and I will be happy to accept them!***
 
