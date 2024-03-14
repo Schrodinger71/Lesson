@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ConsoleAppCalculeteKvadro")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6893951f3c30efc1bbbe895cc6c027f878511f6d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
 [assembly: System.Reflection.AssemblyProductAttribute("ConsoleAppCalculeteKvadro")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ConsoleAppCalculeteKvadro")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

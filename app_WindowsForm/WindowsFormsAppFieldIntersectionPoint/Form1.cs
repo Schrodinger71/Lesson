@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.ToolBar;
 using TextBox = System.Windows.Forms.TextBox;
+using System.Text.RegularExpressions;
 
 namespace WindowsFormsApp1
 {
@@ -22,7 +23,7 @@ namespace WindowsFormsApp1
             textBoxes = new TextBox[] { onePointX1, onePointX2, onePointY1, onePointY2, 
                 secondPointX1, secondPointX2, secondPointY1, secondPointY2 };
 
-            this.ActiveControl = onePointX1; //курсор в первом тектовом поле при инизиализации
+            this.ActiveControl = onePointX1; //курсор в первом тектовом поле при инициализации
 
             CheckIfTextAndLockButton();
 
@@ -62,21 +63,23 @@ namespace WindowsFormsApp1
             ClearTextBoxes();
         }
 
-
         /// <summary>
         /// Проверяет, что все текстовые поля содержат целочисленные значения. <para></para> 
-        /// Если хотя бы одно поле не содержит целочисленный тип, выводит сообщение об ошибке и прерывает выполнение метода.
+        /// Если хотя бы одно поле не содержит целочисленный тип, выводит сообщение об ошибке и прерывает выполнения вычислений в startCalculateButton_Click().
         /// </summary>
-        private void CheckIfAllTextFieldsAreNumbers()
+        private bool CheckIfAllTextFieldsAreNumbers()
         {
             foreach (TextBox textBox in textBoxes)
             {
                 if (!double.TryParse(textBox.Text, out _) && !int.TryParse(textBox.Text, out _))
                 {
                     MessageBox.Show("Пожалуйста, введите числовое значение во все поля!", "Error!!!");
-                    return;
+                    return false;
+                    
                 }
             }
+
+            return true;
         }
 
 
@@ -114,27 +117,26 @@ namespace WindowsFormsApp1
                 double x = (b2 - b1) / (m1 - m2);
                 double y = m1 * x + b1;
 
-                MessageBox.Show($"Точка пересечения: ({x}, {y})");
+                MessageBox.Show($"Точка пересечения: ({x} | {y})");
             }
         }
 
         private void startCalculateButton_Click(object sender, EventArgs e)
         {
-            CheckIfAllTextFieldsAreNumbers();
+            if (CheckIfAllTextFieldsAreNumbers())
+            {
+                double x1 = Double.Parse(onePointX1.Text);
+                double x2 = Double.Parse(onePointX2.Text);
+                double y1 = Double.Parse(onePointY1.Text);
+                double y2 = Double.Parse(onePointY2.Text);
 
-            double x1 = Double.Parse(onePointX1.Text);
-            double x2 = Double.Parse(onePointX2.Text);
-            double y1 = Double.Parse(onePointY1.Text);
-            double y2 = Double.Parse(onePointY2.Text);
+                double x3 = Double.Parse(secondPointX1.Text);
+                double x4 = Double.Parse(secondPointX2.Text);
+                double y3 = Double.Parse(secondPointY1.Text);
+                double y4 = Double.Parse(secondPointY2.Text);
 
-            double x3 = Double.Parse(secondPointX1.Text);
-            double x4 = Double.Parse(secondPointX2.Text);
-            double y3 = Double.Parse(secondPointY1.Text);
-            double y4 = Double.Parse(secondPointY2.Text);
-
-            FieldIntersectionPoint(x1, x2, x3, x4, y1, y2, y3, y4);
+                FieldIntersectionPoint(x1, x2, x3, x4, y1, y2, y3, y4);
+            }
         }
-
-
     }
 }
