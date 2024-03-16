@@ -41,7 +41,8 @@ namespace WindowsFormsGame_Life
                 (
                     rows: pictureBox1.Height / resolution,
                     cols: pictureBox1.Width / resolution,
-                    density: (int)(numDensity.Minimum) * (int)numDensity.Maximum - (int)numDensity.Value
+                    density: (int)numDensity.Value
+                    //density: (int)(numDensity.Minimum) * (int)numDensity.Maximum - (int)numDensity.Value
                 );
 
 

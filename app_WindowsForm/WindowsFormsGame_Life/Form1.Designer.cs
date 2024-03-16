@@ -120,11 +120,6 @@
             // numDensity
             // 
             this.numDensity.Location = new System.Drawing.Point(14, 74);
-            this.numDensity.Maximum = new decimal(new int[] {
-            25,
-            0,
-            0,
-            0});
             this.numDensity.Minimum = new decimal(new int[] {
             2,
             0,
