@@ -12,3 +12,11 @@ C:\Users\Admin\Desktop\MiniTestConsoleGitHubApp\MiniTestConsoleGitHub\obj\Debug\
 C:\Users\Admin\Desktop\MiniTestConsoleGitHubApp\MiniTestConsoleGitHub\obj\Debug\net8.0\MiniTestConsoleGitHub.pdb
 C:\Users\Admin\Desktop\MiniTestConsoleGitHubApp\MiniTestConsoleGitHub\obj\Debug\net8.0\MiniTestConsoleGitHub.genruntimeconfig.cache
 C:\Users\Admin\Desktop\MiniTestConsoleGitHubApp\MiniTestConsoleGitHub\obj\Debug\net8.0\ref\MiniTestConsoleGitHub.dll
+C:\Lesson\app_cs\MiniTestConsoleGitHubApp\MiniTestConsoleGitHub\obj\Debug\net8.0\MiniTestConsoleGitHub.GeneratedMSBuildEditorConfig.editorconfig
+C:\Lesson\app_cs\MiniTestConsoleGitHubApp\MiniTestConsoleGitHub\obj\Debug\net8.0\MiniTestConsoleGitHub.AssemblyInfoInputs.cache
+C:\Lesson\app_cs\MiniTestConsoleGitHubApp\MiniTestConsoleGitHub\obj\Debug\net8.0\MiniTestConsoleGitHub.AssemblyInfo.cs
+C:\Lesson\app_cs\MiniTestConsoleGitHubApp\MiniTestConsoleGitHub\obj\Debug\net8.0\MiniTestConsoleGitHub.csproj.CoreCompileInputs.cache
+C:\Lesson\app_cs\MiniTestConsoleGitHubApp\MiniTestConsoleGitHub\obj\Debug\net8.0\MiniTestConsoleGitHub.sourcelink.json
+C:\Lesson\app_cs\MiniTestConsoleGitHubApp\MiniTestConsoleGitHub\obj\Debug\net8.0\MiniTestConsoleGitHub.dll
+C:\Lesson\app_cs\MiniTestConsoleGitHubApp\MiniTestConsoleGitHub\obj\Debug\net8.0\refint\MiniTestConsoleGitHub.dll
+C:\Lesson\app_cs\MiniTestConsoleGitHubApp\MiniTestConsoleGitHub\obj\Debug\net8.0\MiniTestConsoleGitHub.pdb

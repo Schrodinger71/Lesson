@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Admin\\Desktop\\MiniTestConsoleGitHubApp\\MiniTestConsoleGitHub\\MiniTestConsoleGitHub.csproj",
+      "projectUniqueName": "C:\\Lesson\\app_cs\\MiniTestConsoleGitHubApp\\MiniTestConsoleGitHub\\MiniTestConsoleGitHub.csproj",
       "projectName": "MiniTestConsoleGitHub",
-      "projectPath": "C:\\Users\\Admin\\Desktop\\MiniTestConsoleGitHubApp\\MiniTestConsoleGitHub\\MiniTestConsoleGitHub.csproj",
+      "projectPath": "C:\\Lesson\\app_cs\\MiniTestConsoleGitHubApp\\MiniTestConsoleGitHub\\MiniTestConsoleGitHub.csproj",
       "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Admin\\Desktop\\MiniTestConsoleGitHubApp\\MiniTestConsoleGitHub\\obj\\",
+      "outputPath": "C:\\Lesson\\app_cs\\MiniTestConsoleGitHubApp\\MiniTestConsoleGitHub\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",

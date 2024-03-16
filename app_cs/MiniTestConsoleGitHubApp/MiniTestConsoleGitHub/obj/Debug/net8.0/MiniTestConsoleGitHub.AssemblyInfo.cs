@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MiniTestConsoleGitHub")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a70eeb12bfe9258a3957a47b0eece87cd58b3f04")]
 [assembly: System.Reflection.AssemblyProductAttribute("MiniTestConsoleGitHub")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MiniTestConsoleGitHub")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
