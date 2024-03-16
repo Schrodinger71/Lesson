@@ -1,0 +1,10 @@
+C:\Lesson\app_WindowsForm\WindowsFormsGame_Life\bin\Debug\WindowsFormsGame_Life.exe.config
+C:\Lesson\app_WindowsForm\WindowsFormsGame_Life\bin\Debug\WindowsFormsGame_Life.exe
+C:\Lesson\app_WindowsForm\WindowsFormsGame_Life\bin\Debug\WindowsFormsGame_Life.pdb
+C:\Lesson\app_WindowsForm\WindowsFormsGame_Life\obj\Debug\WindowsFormsGame_Life.csproj.AssemblyReference.cache
+C:\Lesson\app_WindowsForm\WindowsFormsGame_Life\obj\Debug\WindowsFormsGame_Life.Form1.resources
+C:\Lesson\app_WindowsForm\WindowsFormsGame_Life\obj\Debug\WindowsFormsGame_Life.Properties.Resources.resources
+C:\Lesson\app_WindowsForm\WindowsFormsGame_Life\obj\Debug\WindowsFormsGame_Life.csproj.GenerateResource.cache
+C:\Lesson\app_WindowsForm\WindowsFormsGame_Life\obj\Debug\WindowsFormsGame_Life.csproj.CoreCompileInputs.cache
+C:\Lesson\app_WindowsForm\WindowsFormsGame_Life\obj\Debug\WindowsFormsGame_Life.exe
+C:\Lesson\app_WindowsForm\WindowsFormsGame_Life\obj\Debug\WindowsFormsGame_Life.pdb

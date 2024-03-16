@@ -41,4 +41,13 @@ jobs:
     - name: Build app for release
       run: msbuild app_WindowsForm\WindowsFormsAppCalculateLab7\WindowsFormsAppCalculateLab7.sln -t:rebuild -verbosity:diag -property:Configuration=Release
 
-
+  build-windowsFormAppGameLife4:
+    runs-on: windows-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Setup MSBuild
+      uses: microsoft/setup-msbuild@v1.0.2
+    - name: Build solution
+      run: msbuild app_WindowsForm\WindowsFormsGame_Life\WindowsFormsGame_Life.sln /p:Configuration=Release
+    - name: Build app for release
+      run: msbuild app_WindowsForm\WindowsFormsGame_Life\WindowsFormsGame_Life.sln -t:rebuild -verbosity:diag -property:Configuration=Release
