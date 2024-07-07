@@ -1,0 +1,15 @@
+C:\Lesson\app_cs\ConsoleGameLifeApp\bin\Debug\net8.0\ConsoleGameLifeApp.exe
+C:\Lesson\app_cs\ConsoleGameLifeApp\bin\Debug\net8.0\ConsoleGameLifeApp.deps.json
+C:\Lesson\app_cs\ConsoleGameLifeApp\bin\Debug\net8.0\ConsoleGameLifeApp.runtimeconfig.json
+C:\Lesson\app_cs\ConsoleGameLifeApp\bin\Debug\net8.0\ConsoleGameLifeApp.dll
+C:\Lesson\app_cs\ConsoleGameLifeApp\bin\Debug\net8.0\ConsoleGameLifeApp.pdb
+C:\Lesson\app_cs\ConsoleGameLifeApp\obj\Debug\net8.0\ConsoleGameLifeApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Lesson\app_cs\ConsoleGameLifeApp\obj\Debug\net8.0\ConsoleGameLifeApp.AssemblyInfoInputs.cache
+C:\Lesson\app_cs\ConsoleGameLifeApp\obj\Debug\net8.0\ConsoleGameLifeApp.AssemblyInfo.cs
+C:\Lesson\app_cs\ConsoleGameLifeApp\obj\Debug\net8.0\ConsoleGameLifeApp.csproj.CoreCompileInputs.cache
+C:\Lesson\app_cs\ConsoleGameLifeApp\obj\Debug\net8.0\ConsoleGameLifeApp.sourcelink.json
+C:\Lesson\app_cs\ConsoleGameLifeApp\obj\Debug\net8.0\ConsoleGameLifeApp.dll
+C:\Lesson\app_cs\ConsoleGameLifeApp\obj\Debug\net8.0\refint\ConsoleGameLifeApp.dll
+C:\Lesson\app_cs\ConsoleGameLifeApp\obj\Debug\net8.0\ConsoleGameLifeApp.pdb
+C:\Lesson\app_cs\ConsoleGameLifeApp\obj\Debug\net8.0\ConsoleGameLifeApp.genruntimeconfig.cache
+C:\Lesson\app_cs\ConsoleGameLifeApp\obj\Debug\net8.0\ref\ConsoleGameLifeApp.dll

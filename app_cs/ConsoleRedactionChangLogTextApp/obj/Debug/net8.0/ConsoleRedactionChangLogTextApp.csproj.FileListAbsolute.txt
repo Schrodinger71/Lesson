@@ -1,0 +1,15 @@
+C:\Lesson\app_cs\ConsoleRedactionChangLogTextApp\obj\Debug\net8.0\ConsoleRedactionChangLogTextApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Lesson\app_cs\ConsoleRedactionChangLogTextApp\obj\Debug\net8.0\ConsoleRedactionChangLogTextApp.AssemblyInfoInputs.cache
+C:\Lesson\app_cs\ConsoleRedactionChangLogTextApp\obj\Debug\net8.0\ConsoleRedactionChangLogTextApp.AssemblyInfo.cs
+C:\Lesson\app_cs\ConsoleRedactionChangLogTextApp\obj\Debug\net8.0\ConsoleRedactionChangLogTextApp.csproj.CoreCompileInputs.cache
+C:\Lesson\app_cs\ConsoleRedactionChangLogTextApp\obj\Debug\net8.0\ConsoleRedactionChangLogTextApp.sourcelink.json
+C:\Lesson\app_cs\ConsoleRedactionChangLogTextApp\bin\Debug\net8.0\ConsoleRedactionChangLogTextApp.exe
+C:\Lesson\app_cs\ConsoleRedactionChangLogTextApp\bin\Debug\net8.0\ConsoleRedactionChangLogTextApp.deps.json
+C:\Lesson\app_cs\ConsoleRedactionChangLogTextApp\bin\Debug\net8.0\ConsoleRedactionChangLogTextApp.runtimeconfig.json
+C:\Lesson\app_cs\ConsoleRedactionChangLogTextApp\bin\Debug\net8.0\ConsoleRedactionChangLogTextApp.dll
+C:\Lesson\app_cs\ConsoleRedactionChangLogTextApp\bin\Debug\net8.0\ConsoleRedactionChangLogTextApp.pdb
+C:\Lesson\app_cs\ConsoleRedactionChangLogTextApp\obj\Debug\net8.0\ConsoleRedactionChangLogTextApp.dll
+C:\Lesson\app_cs\ConsoleRedactionChangLogTextApp\obj\Debug\net8.0\refint\ConsoleRedactionChangLogTextApp.dll
+C:\Lesson\app_cs\ConsoleRedactionChangLogTextApp\obj\Debug\net8.0\ConsoleRedactionChangLogTextApp.pdb
+C:\Lesson\app_cs\ConsoleRedactionChangLogTextApp\obj\Debug\net8.0\ConsoleRedactionChangLogTextApp.genruntimeconfig.cache
+C:\Lesson\app_cs\ConsoleRedactionChangLogTextApp\obj\Debug\net8.0\ref\ConsoleRedactionChangLogTextApp.dll
