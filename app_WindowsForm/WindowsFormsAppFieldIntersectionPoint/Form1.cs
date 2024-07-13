@@ -83,7 +83,7 @@ namespace WindowsFormsApp1
         }
 
 
-        public void FieldIntersectionPoint(double x1, double x2, double x3, double x4, 
+        public void FieldIntersectionPoint(double x1, double x2, double x3, double x4,
             double y1, double y2, double y3, double y4)
         {
             //Уравнение прямой в общем виде имеет вид y = mx + b, где m - это коэффициент наклона прямой, а b - это коэффициент сдвига по оси y.
@@ -120,6 +120,23 @@ namespace WindowsFormsApp1
                 MessageBox.Show($"Точка пересечения: ({x} | {y})");
             }
         }
+
+        //public void FieldIntersectionPoint(double x1, double x2, double x3, double x4, double y1, double y2, double y3, double y4)
+        //{
+        //    double[,] A = { { (y2 - y1), -(x2 - x1) }, { (y4 - y3), -(x4 - x3) } };
+        //    double[] b = { y1 * (x2 - x1) - x1 * (y2 - y1), y3 * (x4 - x3) - x3 * (y4 - y3) };
+
+        //    double detA = A[0, 0] * A[1, 1] - A[0, 1] * A[1, 0];
+        //    if (detA == 0)
+        //    {
+        //        MessageBox.Show("Прямые параллельны, нет точки пересечения.");
+        //    }
+        //    else
+        //    {
+        //        double[] intersection = { (b[0] * A[1, 1] - b[1] * A[0, 1]) / detA, (A[0, 0] * b[1] - A[1, 0] * b[0]) / detA };
+        //        MessageBox.Show($"Точка пересечения: ({intersection[0]} | {intersection[1]})");
+        //    }
+        //}
 
         private void startCalculateButton_Click(object sender, EventArgs e)
         {

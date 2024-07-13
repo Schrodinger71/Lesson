@@ -132,102 +132,102 @@ int main()
     system("Title String Turbo Pascal"); // Устанавливаем заголовок окна консоли
 
     StringTP myString, str2;
-    cout << "myString = ";
-    cin >> myString;
-    str2 = myString;
-    cout << "str2 = " << str2 << endl;
-    cout << "myString = " << myString << endl;
-    str2.insertSubstring("abc", 2);
-    cout << "myString = " << myString << endl;
-    cout << "str2 = " << str2 << endl;
-    StringTP str3;
-    StringTP str4;
-    cin >> str3;
-    cin >> str4;
-    cout << "str3 = " << str3 << endl;
-    cout << "str4 = " << str4 << endl;
-    StringTP result = str3 + str4;
-    cout << "str3 + str4 = " << result << endl;
-    result.display();
+    //cout << "myString = ";
+    //cin >> myString;
+    //str2 = myString;
+    //cout << "str2 = " << str2 << endl;
+    //cout << "myString = " << myString << endl;
+    //str2.insertSubstring("abc", 2);
+    //cout << "myString = " << myString << endl;
+    //cout << "str2 = " << str2 << endl;
+    //StringTP str3;
+    //StringTP str4;
+    //cin >> str3;
+    //cin >> str4;
+    //cout << "str3 = " << str3 << endl;
+    //cout << "str4 = " << str4 << endl;
+    //StringTP result = str3 + str4;
+    //cout << "str3 + str4 = " << result << endl;
+    //result.display();
 
     int choice;
-    //do {
-    //    cout << "\n1. Получить длину\n";
-    //    cout << "2. Найти подстроку\n";
-    //    cout << "3. Удалить подстроку\n";
-    //    cout << "4. Вставить подстроку\n";
-    //    cout << "5. Объединить строки\n";
-    //    cout << "6. Отобразить строку\n";
-    //    cout << "7. Ввести строку\n";
-    //    cout << "0. Выйти\n";
-    //    cout << "Введите ваш выбор: ";
-    //    cin >> choice;
+    do {
+        cout << "\n1. Получить длину\n";
+        cout << "2. Найти подстроку\n";
+        cout << "3. Удалить подстроку\n";
+        cout << "4. Вставить подстроку\n";
+        cout << "5. Объединить строки\n";
+        cout << "6. Отобразить строку\n";
+        cout << "7. Ввести строку\n";
+        cout << "0. Выйти\n";
+        cout << "Введите ваш выбор: ";
+        cin >> choice;
 
-    //    switch (choice) {
-    //    case 1:
-    //        cout << "Длина строки: " << myString.length() << endl;
-    //        break;
-    //    case 2:
-    //    {
-    //        char substring[StringTP::MAX_SIZE];
-    //        cout << "Введите подстроку для поиска: ";
-    //        cin >> substring;
-    //        int index = myString.findSubstring(substring);
-    //        if (index != -1) {
-    //            cout << "Подстрока найдена в позиции: " << index << endl;
-    //        }
-    //        else {
-    //            cout << "Подстрока не найдена\n";
-    //        }
-    //    }
-    //    break;
-    //    case 3:
-    //    {
-    //        char substring[StringTP::MAX_SIZE];
-    //        cout << "Введите подстроку для удаления: ";
-    //        cin >> substring;
-    //        myString.removeSubstring(substring);
-    //        cout << "Подстрока удалена\n";
-    //    }
-    //    break;
-    //    case 4:
-    //    {
-    //        char substring[StringTP::MAX_SIZE];
-    //        int position;
-    //        cout << "Введите подстроку для вставки: ";
-    //        cin >> substring;
-    //        cout << "Введите позицию для вставки: ";
-    //        cin >> position;
-    //        myString.insertSubstring(substring, position);
-    //        cout << "Подстрока вставлена\n";
-    //    }
-    //    break;
-    //    case 5:
-    //    {
-    //        StringTP otherString;
-    //        cout << "Введите строку для объединения: ";
-    //        cin >> otherString;
-    //        myString.concatenate(otherString);
-    //        cout << "Строки объединены\n";
-    //    }
-    //    break;
-    //    case 6:
-    //        cout << "Текущая строка: ";
-    //        myString.display();
-    //        break;
-    //    case 7:
-    //        cout << "Введите строку: ";
-    //        cin >> myString;
-    //        cout << "Строка введена\n";
-    //        break;
-    //    case 0:
-    //        cout << "Выход...\n";
-    //        break;
-    //    default:
-    //        cout << "Неверный выбор\n";
-    //    }
+        switch (choice) {
+        case 1:
+            cout << "Длина строки: " << myString.length() << endl;
+            break;
+        case 2:
+        {
+            char substring[StringTP::MAX_SIZE];
+            cout << "Введите подстроку для поиска: ";
+            cin >> substring;
+            int index = myString.findSubstring(substring);
+            if (index != -1) {
+                cout << "Подстрока найдена в позиции: " << index << endl;
+            }
+            else {
+                cout << "Подстрока не найдена\n";
+            }
+        }
+        break;
+        case 3:
+        {
+            char substring[StringTP::MAX_SIZE];
+            cout << "Введите подстроку для удаления: ";
+            cin >> substring;
+            myString.removeSubstring(substring);
+            cout << "Подстрока удалена\n";
+        }
+        break;
+        case 4:
+        {
+            char substring[StringTP::MAX_SIZE];
+            int position;
+            cout << "Введите подстроку для вставки: ";
+            cin >> substring;
+            cout << "Введите позицию для вставки: ";
+            cin >> position;
+            myString.insertSubstring(substring, position);
+            cout << "Подстрока вставлена\n";
+        }
+        break;
+        case 5:
+        {
+            StringTP otherString;
+            cout << "Введите строку для объединения: ";
+            cin >> otherString;
+            myString.concatenate(otherString);
+            cout << "Строки объединены\n";
+        }
+        break;
+        case 6:
+            cout << "Текущая строка: ";
+            myString.display();
+            break;
+        case 7:
+            cout << "Введите строку: ";
+            cin >> myString;
+            cout << "Строка введена\n";
+            break;
+        case 0:
+            cout << "Выход...\n";
+            break;
+        default:
+            cout << "Неверный выбор\n";
+        }
 
-    //} while (choice != 0);
+    } while (choice != 0);
 
     return 0;
 }

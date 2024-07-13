@@ -1,0 +1,15 @@
+C:\Lesson\app_cs\ConsoleBanApp\obj\Debug\net8.0\ConsoleBanApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Lesson\app_cs\ConsoleBanApp\obj\Debug\net8.0\ConsoleBanApp.AssemblyInfoInputs.cache
+C:\Lesson\app_cs\ConsoleBanApp\obj\Debug\net8.0\ConsoleBanApp.AssemblyInfo.cs
+C:\Lesson\app_cs\ConsoleBanApp\obj\Debug\net8.0\ConsoleBanApp.csproj.CoreCompileInputs.cache
+C:\Lesson\app_cs\ConsoleBanApp\obj\Debug\net8.0\ConsoleBanApp.sourcelink.json
+C:\Lesson\app_cs\ConsoleBanApp\bin\Debug\net8.0\ConsoleBanApp.exe
+C:\Lesson\app_cs\ConsoleBanApp\bin\Debug\net8.0\ConsoleBanApp.deps.json
+C:\Lesson\app_cs\ConsoleBanApp\bin\Debug\net8.0\ConsoleBanApp.runtimeconfig.json
+C:\Lesson\app_cs\ConsoleBanApp\bin\Debug\net8.0\ConsoleBanApp.dll
+C:\Lesson\app_cs\ConsoleBanApp\bin\Debug\net8.0\ConsoleBanApp.pdb
+C:\Lesson\app_cs\ConsoleBanApp\obj\Debug\net8.0\ConsoleBanApp.dll
+C:\Lesson\app_cs\ConsoleBanApp\obj\Debug\net8.0\refint\ConsoleBanApp.dll
+C:\Lesson\app_cs\ConsoleBanApp\obj\Debug\net8.0\ConsoleBanApp.pdb
+C:\Lesson\app_cs\ConsoleBanApp\obj\Debug\net8.0\ConsoleBanApp.genruntimeconfig.cache
+C:\Lesson\app_cs\ConsoleBanApp\obj\Debug\net8.0\ref\ConsoleBanApp.dll

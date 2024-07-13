@@ -1,0 +1,12 @@
+C:\Lesson\other\ClassLibraryGameEngineLife\bin\Debug\net8.0\ClassLibraryGameEngineLife.deps.json
+C:\Lesson\other\ClassLibraryGameEngineLife\bin\Debug\net8.0\ClassLibraryGameEngineLife.dll
+C:\Lesson\other\ClassLibraryGameEngineLife\bin\Debug\net8.0\ClassLibraryGameEngineLife.pdb
+C:\Lesson\other\ClassLibraryGameEngineLife\obj\Debug\net8.0\ClassLibraryGameEngineLife.GeneratedMSBuildEditorConfig.editorconfig
+C:\Lesson\other\ClassLibraryGameEngineLife\obj\Debug\net8.0\ClassLibraryGameEngineLife.AssemblyInfoInputs.cache
+C:\Lesson\other\ClassLibraryGameEngineLife\obj\Debug\net8.0\ClassLibraryGameEngineLife.AssemblyInfo.cs
+C:\Lesson\other\ClassLibraryGameEngineLife\obj\Debug\net8.0\ClassLibraryGameEngineLife.csproj.CoreCompileInputs.cache
+C:\Lesson\other\ClassLibraryGameEngineLife\obj\Debug\net8.0\ClassLibraryGameEngineLife.sourcelink.json
+C:\Lesson\other\ClassLibraryGameEngineLife\obj\Debug\net8.0\ClassLibraryGameEngineLife.dll
+C:\Lesson\other\ClassLibraryGameEngineLife\obj\Debug\net8.0\refint\ClassLibraryGameEngineLife.dll
+C:\Lesson\other\ClassLibraryGameEngineLife\obj\Debug\net8.0\ClassLibraryGameEngineLife.pdb
+C:\Lesson\other\ClassLibraryGameEngineLife\obj\Debug\net8.0\ref\ClassLibraryGameEngineLife.dll
