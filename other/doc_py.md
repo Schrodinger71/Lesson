@@ -1,3 +1,8 @@
+pyinstaller -F --icon=name.ico main.py
+pyinstaller -F -w --icon=name.ico main.py
+pyinstaller -F -w main.py
+pyinstaller -w main.py
+
 
 pip freeze > requirements.txt
 pip list
@@ -11,6 +16,8 @@ pip uninstall <module> -y
 deactivate
 activate
 
+pip install isort
+isort .
 
 ## Pipfile, Pipenv и pipenv install:
 
@@ -33,7 +40,7 @@ pipenv install - это команда, используемая для уста
 
 Установка пакета:
 ```py
- pipenv install requests
+ pipenv install requests #Пример
 ```
 
 Обновление зависимостей:
@@ -41,9 +48,9 @@ pipenv install - это команда, используемая для уста
  pipenv update
  ```
 
-Установка зависимостей из Pipfile:
+Установка зависимостей из Pipfile, автоматом читает и ставит зависимости в виртуалку
 ```py
- pipenv install
+ pipenv install 
  ```
 
 Активация виртуальной среды:
@@ -60,10 +67,21 @@ pipenv install - это команда, используемая для уста
 ```py
  pipenv shell --exit
   ```
+  Эта команда выведет вас из оболочки виртуальной среды и вернет вас в основную оболочку.
 
-Эта команда выведет вас из оболочки виртуальной среды и вернет вас в основную оболочку.
+  закинуть все зависимости в requirements.txt из виртуальной среды
+```
+  pipenv graph > requirements.txt
+```
+
+Все зависисмотси установяться  в виртуальную из этого файла
+```
+pipenv install -r requirements.txt
+```
+
 
 Важно:
+
 
 · Вы должны быть внутри виртуальной среды, чтобы выполнить эту команду.
 · Если вы используете другую оболочку, кроме Bash, команда может отличаться. Проверьте документацию для вашей оболочки.
