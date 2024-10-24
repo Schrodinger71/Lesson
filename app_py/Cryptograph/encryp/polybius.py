@@ -5,19 +5,29 @@ from tabulate import tabulate
 from config import en, rus
 
 
-def create_polybius_square(alphabet):
-    """Создает квадрат Полибия для заданного алфавита."""
-    size = int(len(alphabet) ** 0.5) + 1  # Определяем размер квадрата
-    square = [['' for _ in range(size)] for _ in range(size)]
+def create_polybius_square(alphabet, keyword):
+    special_chars = "!@#$%^&*()-_=+[]{}|;:',.<>?/~`"
+    # Удаляем дубликаты из ключевого слова
+    seen = set()
+    filtered_keyword = ''.join([char for char in keyword if not (char in seen or seen.add(char))])
     
-    index = 0
+    # Создаем строку для квадрата Полибия
+    square_string = filtered_keyword + ''.join([char for char in alphabet if char not in filtered_keyword])
+    
+    # Формируем квадрат
+    size = int(len(square_string)**0.5) + (len(square_string) % 2 > 0)  # Определяем размер квадрата
+    square = []
+    
     for i in range(size):
+        row = []
         for j in range(size):
-            if index < len(alphabet):
-                square[i][j] = alphabet[index]
-                index += 1
+            index = i * size + j
+            if index < len(square_string):
+                row.append(square_string[index])
             else:
-                square[i][j] = random.choice('!@#$%^&*()_+=-`~|}{[]\:;?><,./')
+                row.append(random.choice(special_chars))
+        square.append(row)
+    
     return square
 
 def find_coordinates(square, char):
@@ -42,7 +52,9 @@ def print_polybius_square(square):
 
 def polybius():
     alphabet = rus # + en  # Объединяем алфавиты, если нужно
-    square = create_polybius_square(alphabet)
+    # Ввод кодового слова
+    keyword = input("Введите кодовое слово: ")
+    square = create_polybius_square(alphabet, keyword)
     
     print_polybius_square(square)  # Выводим квадрат Полибия
     
@@ -80,36 +92,37 @@ def polybius():
                 encrypted_message += f"{coordinates[i][0]}{coordinates[i][1]}{coordinates[i + 1][0]}{coordinates[i + 1][1]}"
             else:
                 encrypted_message += f"{coordinates[i][0]}{coordinates[i][1]}"
-                
-        # Создаем новую строку
-        new_string = ""
-        # Добавляем первые два символа
-        new_string += encrypted_message[0:2]
-        # Добавляем символы с четными индексами
-        for i in range(2, len(encrypted_message), 2):
-            new_string += encrypted_message[i]
-        # Добавляем символы с нечетными индексами
-        for i in range(3, len(encrypted_message), 2):
-            new_string += encrypted_message[i]
-        encrypted_message = new_string
         
-        # # Инициализация пустой строки для сообщения
-        # message = ""
-
-        # # Проходим по строке с шагом 2, чтобы извлекать пары координат
-        # for i in range(0, len(encrypted_message), 2):
-        #     x = int(encrypted_message[i])   # Координата Y (вертикальная)
-        #     y = int(encrypted_message[i + 1])  # Координата X (горизонтальная)
-            
-        #     # Проверяем, что координаты находятся в пределах массива
-        #     if 0 <= y < len(square) and 0 <= x < len(square[y]):
-        #         message += square[y][x]
-        #     else:
-        #         message += '?'  # Если координаты выходят за пределы
-
-        # # Выводим расшифрованное сообщение
-        # print(message)
-
+        message_list = list(encrypted_message)
+        for i in range(0, len(message_list) - 1, 2):
+            message_list[i], message_list[i + 1] = message_list[i + 1], message_list[i]
+        encrypted_message = ''.join(message_list)
+        print(f"Координаты: {encrypted_message}")
+        
+        # Исходные данные
+        coordinates = encrypted_message
+        new_string = ''
+        for i in range(len(coordinates)):
+            if i % 2 == 0:
+                new_string += coordinates[i]
+        for i in range(len(coordinates)):
+            if i % 2 == 1:
+                new_string += coordinates[i]
+        print(f"Новые координаты: {new_string}")
+        
+        # Преобразуем строку координат в список пар координат
+        coordinates = [new_string[i:i+2] for i in range(0, len(new_string), 2)]
+        # Извлекаем буквы по координатам
+        result = []
+        for coord in coordinates:
+            row = int(coord[0]) - 1  # Преобразуем в индекс строки
+            col = int(coord[1]) - 1  # Преобразуем в индекс столбца
+            if 0 <= row < len(square) and 0 <= col < len(square[0]):
+                result.append(square[col][row])
+        # Выводим результат
+        output_string = ''.join(result)
+        #print("Результат:", output_string)
+        encrypted_message = output_string
 
 
     elif method == '3':
