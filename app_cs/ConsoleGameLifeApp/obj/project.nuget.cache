@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "u9D6x71BbOpTX9bga7qW+uhPLHD9vS+IQNTZwAD1A1cHigumDS/vh/HjUyj0DzUD0FSn0seSeydY3FqwTePa4w==",
+  "dgSpecHash": "J+R4BiSE/jURtX5hyPvOD9pvzcvMzck1wYBkgUjpVlS/WUBPgBLCaur5gcQSO4F6cCiLkCo/6kxu/G8Xcv/L2Q==",
   "success": true,
-  "projectFilePath": "C:\\Lesson\\app_cs\\ConsoleGameLifeApp\\ConsoleGameLifeApp.csproj",
+  "projectFilePath": "C:\\Develop\\Lesson\\app_cs\\ConsoleGameLifeApp\\ConsoleGameLifeApp.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

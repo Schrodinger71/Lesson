@@ -1,0 +1,67 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Develop\\Lesson\\app_cs\\ConsoleShifratorApp\\ConsoleShifratorApp.csproj": {}
+  },
+  "projects": {
+    "C:\\Develop\\Lesson\\app_cs\\ConsoleShifratorApp\\ConsoleShifratorApp.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Develop\\Lesson\\app_cs\\ConsoleShifratorApp\\ConsoleShifratorApp.csproj",
+        "projectName": "ConsoleShifratorApp",
+        "projectPath": "C:\\Develop\\Lesson\\app_cs\\ConsoleShifratorApp\\ConsoleShifratorApp.csproj",
+        "packagesPath": "C:\\Users\\Aleksander\\.nuget\\packages\\",
+        "outputPath": "C:\\Develop\\Lesson\\app_cs\\ConsoleShifratorApp\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Aleksander\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Newtonsoft.json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.108/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

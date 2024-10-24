@@ -1,27 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Lesson\\app_cs\\MiniTestConsoleGitHubApp\\MiniTestConsoleGitHub\\MiniTestConsoleGitHub.csproj": {}
+    "C:\\Develop\\Lesson\\app_cs\\MiniTestConsoleGitHubApp\\MiniTestConsoleGitHub\\MiniTestConsoleGitHub.csproj": {}
   },
   "projects": {
-    "C:\\Lesson\\app_cs\\MiniTestConsoleGitHubApp\\MiniTestConsoleGitHub\\MiniTestConsoleGitHub.csproj": {
+    "C:\\Develop\\Lesson\\app_cs\\MiniTestConsoleGitHubApp\\MiniTestConsoleGitHub\\MiniTestConsoleGitHub.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Lesson\\app_cs\\MiniTestConsoleGitHubApp\\MiniTestConsoleGitHub\\MiniTestConsoleGitHub.csproj",
+        "projectUniqueName": "C:\\Develop\\Lesson\\app_cs\\MiniTestConsoleGitHubApp\\MiniTestConsoleGitHub\\MiniTestConsoleGitHub.csproj",
         "projectName": "MiniTestConsoleGitHub",
-        "projectPath": "C:\\Lesson\\app_cs\\MiniTestConsoleGitHubApp\\MiniTestConsoleGitHub\\MiniTestConsoleGitHub.csproj",
-        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Lesson\\app_cs\\MiniTestConsoleGitHubApp\\MiniTestConsoleGitHub\\obj\\",
+        "projectPath": "C:\\Develop\\Lesson\\app_cs\\MiniTestConsoleGitHubApp\\MiniTestConsoleGitHub\\MiniTestConsoleGitHub.csproj",
+        "packagesPath": "C:\\Users\\Aleksander\\.nuget\\packages\\",
+        "outputPath": "C:\\Develop\\Lesson\\app_cs\\MiniTestConsoleGitHubApp\\MiniTestConsoleGitHub\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Aleksander\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -55,7 +53,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.108/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

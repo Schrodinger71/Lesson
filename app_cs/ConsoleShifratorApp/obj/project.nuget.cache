@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "zM8rx0sA4iQTROWrdcszLP837hx7GNOEZRqs8V+fdeB9qxLiYj3MGK9AqlexhGOCk8EjeEK2FqcST+lmbKM6SQ==",
+  "success": true,
+  "projectFilePath": "C:\\Develop\\Lesson\\app_cs\\ConsoleShifratorApp\\ConsoleShifratorApp.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Aleksander\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
